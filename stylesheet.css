@@ -1,1 +1,28 @@
 /* append as necessary */
+.section.light {
+    background-color: rgb(255, 255, 255);
+}
+
+.section.dark {
+    background-color: rgb(245, 245, 245);
+}
+
+h2 {
+    text-align: center;
+}
+
+.extra li {
+    margin-left: 18px;
+}
+
+.column {
+    margin: 20px 60px;
+}
+
+.extra {
+    margin-left: 60px;
+}
+
+.body {
+    background-color: teal;
+}
