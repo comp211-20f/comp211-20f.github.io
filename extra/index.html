@@ -27,9 +27,172 @@
 </section>
 <section class="section">
     <div class="content">
-        <p>TODO</p>
+        <h1 class="has-text-centered" >Practice Problems: Pointers</h1>
+
+        <div style="display:block; border: 2px solid black; margin-bottom: 1rem"> </div>
+        <div style="display:flex; justify-content: center; ">
+        <div style="margin: auto">
+        <div style="padding: 1rem">
+            <div >
+                <h2>Problem 0</h2>
+                <p>What is the output of the following code? Fill in the blanks</p>
+                <div style="display: flex; flex-direction:column">
+                    <div>
+                    <img src="images/0_code.PNG"/>
+                    </div>
+                    <div style="padding-top:1rem">
+                    <img src="images/0_blanks.PNG"/>
+                    </div>
+                </div>
+                <button id="button0" onClick="toggleAnswer(0)"> Show answer </button>
+                <p id="answer0" style="display:none">
+                    <img src="images/0_answer.PNG"/>
+                </p>
+            </div>
+        </div>
+
+        <div style="display:block; border: 2px solid black; margin-bottom: 1rem; margin-top: 1rem"> </div>
+
+        <div style="padding: 1rem">
+            <div >
+                <h2>Problem 1</h2>
+                <p>What is the output of the following code? Fill in the blanks</p>
+                <div style="display: flex; flex-direction:column">
+                    <div>
+                    <img src="images/1_code.PNG"/>
+                    </div>
+                    <div style="padding-top:1rem">
+                    <img src="images/1_blanks.PNG"/>
+                    </div>
+                </div>
+                <button id="button1" onClick="toggleAnswer(1)"> Show answer </button>
+                <p id="answer1" style="display:none">
+                    <img src="images/1_answer.PNG"/>
+                </p>
+            </div>
+        </div>
+
+        <div style="display:block; border: 2px solid black; margin-bottom: 1rem; margin-top: 1rem"> </div>
+
+        <div style="padding: 1rem">
+            <div >
+                <h2>Problem 2</h2>
+                <p>What is the output of the following code? Fill in the blanks</p>
+                <div style="display: flex; flex-direction:column">
+                    <div>
+                    <img src="images/2_code.PNG"/>
+                    </div>
+                    <div style="padding-top:1rem">
+                    <img src="images/2_blanks.PNG"/>
+                    </div>
+                </div>
+                <button id="button2" onClick="toggleAnswer(2)"> Show answer </button>
+                <p id="answer2" style="display:none">
+                    <img src="images/2_answer.PNG"/>
+                </p>
+            </div>
+        </div>
+
+
+        <div style="display:block; border: 2px solid black; margin-bottom: 1rem; margin-top: 1rem"> </div>
+
+        <div style="padding: 1rem">
+            <div >
+                <h2>Problem 3</h2>
+                <p>What is the output of the following code?</p>
+                <div style="display: flex; flex-direction:column">
+                    <div>
+                    <img src="images/3_code.PNG"/>
+                    </div>
+                </div>
+                <button id="button3" onClick="toggleAnswer(3)"> Show answer </button>
+                <p id="answer3" style="display:none">
+                    <img src="images/3_answer.PNG"/>
+                </p>
+            </div>
+        </div>
+        
+        <div style="display:block; border: 2px solid black; margin-bottom: 1rem; margin-top: 1rem"> </div>
+
+        <div style="padding: 1rem">
+            <div >
+                <h2>Problem 4</h2>
+                <p>What is the output of the following code? Fill in the blanks</p>
+                <div style="display: flex; flex-direction:column">
+                    <div>
+                    <img src="images/4_code.PNG"/>
+                    </div>
+                    <div style="padding-top:1rem">
+                    <img src="images/4_blanks.PNG"/>
+                    </div>
+                </div>
+                <button id="button4" onClick="toggleAnswer(4)"> Show answer </button>
+                <p id="answer4" style="display:none">
+                    <img src="images/4_answer.PNG"/>
+                </p>
+            </div>
+        </div>
+
+        <div style="display:block; border: 2px solid black; margin-bottom: 1rem; margin-top: 1rem"> </div>
+
+
+        <div style="padding: 1rem">
+            <div >
+                <h2>Problem 5</h2>
+                <p>What is the output of the following code?</p>
+                <div style="display: flex; flex-direction:column">
+                    <div>
+                    <img src="images/5_code.PNG"/>
+                    </div>
+                    <div style="padding-top:1rem">
+                    </div>
+                </div>
+                <button id="button5" onClick="toggleAnswer(5)"> Show answer </button>
+                <p id="answer5" style="display:none">
+                    <img src="images/5_answer.PNG"/>
+                </p>
+            </div>
+        </div>
+
+        <div style="display:block; border: 2px solid black; margin-bottom: 1rem; margin-top: 1rem"> </div>
+
+        <div style="padding: 1rem">
+            <div >
+                <h2>Problem 6</h2>
+                <p>What is the output of the following code? (Hint: Use the ASCII table to decode each byte)</p>
+                <div style="display: flex; flex-direction:column">
+                    <div>
+                    <img src="images/6_code.PNG"/>
+                    </div>
+                </div>
+                <button id="button6" onClick="toggleAnswer(6)"> Show answer </button>
+                <p id="answer6" style="display:none">
+                    <img src="images/6_answer.PNG"/>
+                </p>
+            </div>
+        </div>
+
+        <div style="display:block; border: 2px solid black; margin-bottom: 1rem; margin-top: 1rem"> </div>
+
+        </div>
+        </div>
+
     </div>
 </section>
 
+<script>
+    function toggleAnswer(idNum) {
+        var answerID = `answer${idNum}`
+        var buttonID = `button${idNum}`
+        var currentState = document.getElementById(answerID).style.display;
+        if (currentState == "block"){
+            document.getElementById(answerID).style.display = "none";
+            document.getElementById(buttonID).innerHTML = "Show answer";
+        } else{
+            document.getElementById(answerID).style.display = "block";
+            document.getElementById(buttonID).innerHTML = "Hide answer";
+        }
+    }
+</script>
 </body>
 </html>
