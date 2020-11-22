@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Systems Fundamentals - Extra</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel=stylesheet type="text/css" href="../stylesheet.css">
+</head>
+<body>
+<section class="hero is-success is-bold">
+    <div class="hero-body">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="title" href="../">COMP 211</a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item has-text-weight-bold" href="../">Home</a>
+                    <a class="navbar-item has-text-weight-bold" href="../lectures">Lectures</a>
+                    <a class="navbar-item has-text-weight-bold" href="../extra">Extra resources</a>
+                    <a class="navbar-item has-text-weight-bold" href="../beyond">Beyond 211</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
+<section class="section">
+    <div class="content">
+        <h1 class="title">GNU Debugger (gdb)</h1>
+        <p>The <strong><a href="https://www.gnu.org/software/gdb/">GNU Debugger</a></strong> (<strong>gdb</strong>) is a special piece of software used for debugging C code, as well as code in other languages, including C++, Assembly, Go, and Rust. As C code will often not produce a stack trace like Java does, figuring out what happens when something goes wrong is a tremendously painful task.</p>
+        <p>gdb <a href="https://www.gnu.org/software/gdb/song/">has two songs</a>. As a part of the GNU project, gdb is completely open source. You can look at the source code yourself by doing <code>git clone git://sourceware.org/git/binutils-gdb.git</code>.</p>
+        <p>This page is not meant to be a comprehensive introduction to gdb, since Professor Jordan already <a href="https://www.youtube.com/watch?v=ZI6buaVvk8g&list=PLKUb7MEve0TjHQSKUWChAWyJPCpYMRovO&index=18">made a comprehensive introduction</a>. Rather, this is just something of a cheat sheet to refamiliarize yourself with.</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>start</code></td>
+                    <td>This will start the execution of the program.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+</body>
+</html>
