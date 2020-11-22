@@ -43,6 +43,58 @@
                     <td><code>start</code></td>
                     <td>This will start the execution of the program.</td>
                 </tr>
+                <tr>
+                    <td><code>next</code></td>
+                    <td>This run the next statement in the program.</td>
+                </tr>
+                <tr>
+                    <td><code>n</code></td>
+                    <td>This will also run the next statement in the program. There are many shorter pseudonyms for commands that can make debugging easier, such as this one.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Press entering with no command typed will run the last command ran. This will also make debugging easier.</td>
+                </tr>
+                <tr>
+                    <td><code>step</code> or <code>s</code></td>
+                    <td>This will run the next statement in the program, "stepping" into a function if the statement executes a function.</td>
+                </tr>
+                <tr>
+                    <td><code>list</code> or <code>l</code></td>
+                    <td>This lists all of the code around the current line about to be executed.</td>
+                </tr>
+                <tr>
+                    <td><code>list [line]</code> or <code>l [line]</code></td>
+                    <td>This lists all of the code around the specified line about to be executed.</td>
+                </tr>
+                <tr>
+                    <td><code>print [expression]</code> or <code>p [expression]</code></td>
+                    <td>This prints the given expression or variable given.</td>
+                </tr>
+                <tr>
+                    <td><code>break [line]</code> or <code>b [line]</code></td>
+                    <td>This creates a breakpoint at the given line.</td>
+                </tr>
+                <tr>
+                    <td><code>break [file]:[line]</code> or <code>b [file]:[line]</code></td>
+                    <td>This creates a breakpoint at the given line, in the given file.</td>
+                </tr>
+                <tr>
+                    <td><code>continue</code> or <code>c</code></td>
+                    <td>This will run the program until a breakpoint is reached.</td>
+                </tr>
+                <tr>
+                    <td><code>break [line] if [expr]</code> or <code>b [line] if [expr]</code></td>
+                    <td>This creates a breakpoint at the given line, which will only break if the given expression (treated as a boolean) is true.</td>
+                </tr>
+                <tr>
+                    <td><code>break [file]:[line] if [expr]</code> or <code>b [file]:[line] if [expr]</code></td>
+                    <td>This creates a breakpoint at the given line, in the given file, which will only break if the given expression (treated as a boolean) is true.</td>
+                </tr>
+                <tr>
+                    <td><code>quit</code> or <code>q</code></td>
+                    <td>This quits gdb.</td>
+                </tr>
             </tbody>
         </table>
     </div>
